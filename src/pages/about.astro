@@ -1,5 +1,18 @@
 ---
+const pageTitle = "About Me";
 
+const identity = {
+    name: "K1ama",
+    country: "Wakanda",
+    occupation: "Plumber In the Webverse",
+    hobbies: ["photography", "gardening"]
+}
+
+const skills = [
+    "PHP",
+    "SQL",
+    "GO"
+]
 ---
 
 <html lang="en">
@@ -8,13 +21,22 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Site</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-		<h1>Hello World From Astro Universe</h1>
-        <h2>This is beautiful</h2>
-        <p>Let's explore this world further and see all we can see....</p>
+        <p>Here are a few facts abput me:</p>
+        <ul>
+            <li>My name is {identity.name}.</li>
+            <li>I live in {identity.country} and work as a {identity.occupation}.</li>
+        
+            {identity.hobbies.length >= 2 &&
+                <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+            }
+        </ul>
+
+        <p>My skills are:</p>
+        <ul>
+            {skills.map((skill) => <li>{skill}</li>)}
+        </ul>
     </body>
 </html>
