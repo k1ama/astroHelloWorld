@@ -1,0 +1,30 @@
+---
+import Navigation from "../components/Navigation.astro";
+import '../styles/global.css';
+---
+
+<header>
+    <nav>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        <Navigation/>
+    </nav>
+</header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (toggleButton && navLinks) {
+            toggleButton.addEventListener('click', function() {
+                navLinks.classList.toggle('expanded');
+                toggleButton.classList.toggle('active');
+            });
+        }
+    });
+</script>
+
