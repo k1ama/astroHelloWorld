@@ -9,10 +9,15 @@ const identity = {
 }
 
 const skills = [
-    "PHP",
-    "SQL",
-    "GO"
+    "php",
+    "sql",
+    "go"
 ]
+
+const skillColor = "navy";
+const fontWeight = "bold";
+const textCase   = "uppercase";
+
 ---
 
 <html lang="en">
@@ -22,9 +27,22 @@ const skills = [
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+        <style define:vars={{skillColor, fontWeight, textCase}}>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+            }
+            .skill {
+                color: var(--skillColor);
+                font-weight: var(--fontWeight);
+                text-transform: var(--textCase);
+            }
+        </style>
 	</head>
 	<body>
-        <p>Here are a few facts abput me:</p>
+        <h1>Who am I?</h1>
+
+        <p>Here are a few facts about me:</p>
         <ul>
             <li>My name is {identity.name}.</li>
             <li>I live in {identity.country} and work as a {identity.occupation}.</li>
@@ -36,7 +54,7 @@ const skills = [
 
         <p>My skills are:</p>
         <ul>
-            {skills.map((skill) => <li>{skill}</li>)}
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
     </body>
 </html>
