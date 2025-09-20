@@ -1,6 +1,7 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Yap'
-pubDate: 2025-07-01
+pubDate: 2025-09-20
 description: 'This is the first yap as I explore the universe of Astro.'
 author: 'K1ama'
 image:
@@ -9,8 +10,6 @@ image:
 tags: ["astro", "blogging", "learning in public"]
 ---
 # My First Yap
-
-Published on: 2022-07-01
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
