@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: Yap Tres
 author: K1ama
 description: "I had some challenges, but asking in the community really helped!"

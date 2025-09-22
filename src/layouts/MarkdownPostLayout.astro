@@ -23,8 +23,8 @@ const { frontmatter } = Astro.props;
             background-color: #F8FCFD;
           }
     </style>
-    
-    <p>Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+
+    <p>Published on: {frontmatter.pubDate.toLocaleDateString().slice(0,10)}</p>
     
     <p><em>{frontmatter.description}</em></p>
     

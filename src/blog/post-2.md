@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: Yap Dos
 author: K1ama
 description: "After learning some Astro, I couldn't stop!"

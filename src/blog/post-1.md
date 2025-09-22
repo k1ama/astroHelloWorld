@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Yap'
 pubDate: 2025-09-20
 description: 'This is the first yap as I explore the universe of Astro.'

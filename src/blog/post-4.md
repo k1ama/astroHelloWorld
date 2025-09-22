@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: My 4th Yap
 author: K1ama
 description: "This post will show up on its own!"
